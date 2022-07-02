@@ -22,6 +22,7 @@ h1,h2,h3,h4,h5,h6 {
 input{
     outline: none;
 }
+
 select,html,body {
     height: 100%;
     line-height: 1;
@@ -66,8 +67,6 @@ select,html,body {
     z-index: 3;
 }
 
-
-
 ._img{
     position: absolute;
     width: 100%;
@@ -93,9 +92,6 @@ select,html,body {
     max-width: 1280px;
 }
 
-.header_logo{
-
-}
 .ico_block{
     margin-top: 25px;
     position: absolute;
@@ -111,9 +107,7 @@ select,html,body {
     height: 100%;
     object-fit: cover;
 }
-.header_menu{
 
-}
 .header_mobileMenu{
     display: none;
 }
@@ -270,8 +264,6 @@ select,html,body {
 .main_middleBlock{
     margin-top: 325px;
 }
-.middleBlock_container{
-}
 
 .middleBlock_firstHalf{
     display: flex;
@@ -326,10 +318,6 @@ select,html,body {
     line-height: 156%;
 }
 
-.middleBlock_fH_img{
-
-}
-
 .middleBlock_secondHalf{
     margin-top: 80px;
     display: flex;
@@ -339,16 +327,12 @@ select,html,body {
     flex-wrap:wrap;
 }
 
-.middleBlock_sH_img{
-}
-
 .middleBlock_bookingTable{
     display: flex;
     align-items:center;
     max-width: 565px;
     flex-direction: column;
 }
-
 
 .middleBlock_sH_title{
     font-family: 'Acme';
@@ -381,8 +365,6 @@ select,html,body {
     flex-wrap:wrap;
     justify-content: space-between;
 }
-
-
 
 .middleBlock_bookingElements :nth-child(n){
     flex: 0 0 276.8px;
@@ -433,15 +415,6 @@ select,html,body {
 .main_lowerBlock{
     position: relative;
     margin-bottom: 100px;
-}
-
-.lowerBlock_container{
-
-}
-
-.lowerBlock_body{
-
-    
 }
 
 .lowerBlock_uppertitle{
@@ -505,10 +478,6 @@ select,html,body {
     color: rgba(255, 255, 255, 0.9);
 }
 
-.lowerBlock_img img{
-
-}
-
 .lowerBlock_bg{
     min-height: 675px;
     width: 100%;
@@ -523,13 +492,6 @@ select,html,body {
 
 .main_lastBlock{
     margin-top: 190px;
-}
-
-.main_lastBlock_container{
-
-}
-
-.lowerBlock_contacts{
 }
 
 .contacts_block{
@@ -754,6 +716,7 @@ select,html,body {
         left: 50%;
         align-self: center;
         z-index: 30;
+        min-width: 0px;
     }
 
     .header_sideMenu:checked ~ html{
@@ -775,10 +738,24 @@ select,html,body {
     }
 
 }
+@media (max-width: 600px){
+    .middleBlock_textBlock{
+        padding: 0px 20px;
+    }
 
+    .lowerBlock_textbox{
+        padding: 0px 20px;
+    }
+
+    .middleBlock_workTime{
+        padding: 0px 20px;
+    }
+
+    .contacts_text{
+        padding: 0px 20px;
+    }
+}
 @media (max-width: 1156px){
-    /**/
-
     .middleBlock_textBlock{
         margin-bottom: 60px;
     }
